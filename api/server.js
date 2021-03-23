@@ -12,7 +12,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/funkySound', {
     useUnifiedTopology: true,
     useCreateIndex: true
 });
-const SoundRoute = require('./routes/sound.routes.js');
+const SoundRoute = require('./routes/sound.API');
 app.use(SoundRoute);
 app.listen(apiPort, () => console.log(`Server running on port ${apiPort}`))
 console.log('Server on port', 3001);
