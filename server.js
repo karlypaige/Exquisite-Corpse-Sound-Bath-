@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const app = express();
-const apiPort = 3001;
+const apiPort = process.env.PORT || 3001;
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 app.use(express.json());
