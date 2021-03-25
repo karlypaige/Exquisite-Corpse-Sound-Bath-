@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
-  "proxy": "http://localhost:3001/",
+  "proxy": "http://localhost:3002/",
   "dependencies": {
     "axios": "^0.21.1",
     "history": "^4.10.1",
