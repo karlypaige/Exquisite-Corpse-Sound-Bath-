@@ -1,4 +1,4 @@
-const db = require('../models');
+const db = require('../api/models');
 
 // Defining methods for the tracksController
 module.exports = {
