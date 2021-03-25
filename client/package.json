@@ -38,7 +38,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open",
-    "heroku-postbuild": "webpack --config webpack.prod.js"
+    "heroku-postbuild": "webpack -p --config webpack.prod.config.js"
   },
   "repository": {
     "type": "git",
