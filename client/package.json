@@ -2,7 +2,7 @@
   "name": "exquisite-corpse-sound-bath-",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
+  "main": "server.js",
   "proxy": "http://localhost:3002/",
   "dependencies": {
     "@heroku/buildpack-registry": "^1.0.1",
@@ -38,7 +38,8 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open",
-    "heroku-postbuild": "webpack --config webpack.prod.js"
+    "heroku-postbuild": "webpack --config webpack.prod.js",
+    "server": "nodemon server.js"
   },
   "repository": {
     "type": "git",
