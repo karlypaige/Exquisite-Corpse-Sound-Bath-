@@ -39,7 +39,7 @@
   "devDependencies": {},
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-prod-server --open"
   },
   "repository": {
     "type": "git",
