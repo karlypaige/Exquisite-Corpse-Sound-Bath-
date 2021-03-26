@@ -4,6 +4,9 @@
   "description": "",
   "main": "server.js",
   "proxy": "http://localhost:3002/",
+  "engines": {
+    "node": "15.2.0"
+  },
   "dependencies": {
     "@heroku/buildpack-registry": "^1.0.1",
     "async-file": "^2.0.2",
@@ -36,7 +39,6 @@
     "webpack-merge": "^5.7.3"
   },
   "scripts": {
-    "build": "webpack --mode production",
     "start": "webpack-dev-server --open",
     "heroku-postbuild": "webpack --config webpack.prod.js",
     "server": "nodemon server.js"
@@ -50,5 +52,5 @@
   "bugs": {
     "url": "https://github.com/sanjay1626/Exquisite-Corpse-Sound-Bath-/issues"
   },
-  "homepage": "https://github.com/sanjay1626/Exquisite-Corpse-Sound-Bath-#readme"
+  "homepage": "."
 }
