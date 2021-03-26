@@ -33,10 +33,11 @@
     "tone": "^14.7.77",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {
     "webpack-merge": "^5.7.3"
   },
-  "devDependencies": {},
   "scripts": {
     "start": "webpack-serve --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
