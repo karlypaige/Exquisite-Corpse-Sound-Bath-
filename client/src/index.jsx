@@ -9,6 +9,10 @@ import { App } from './App';
 import { configureFakeBackend } from './_helpers';
 configureFakeBackend();
 
+if (process.env.NODE_ENV !== 'production') {
+    console.log('Looks like we are in development mode!');
+};
+
 render(
     <Provider store={store}>
         <App />

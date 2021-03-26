@@ -10,9 +10,5 @@ const path = require('path');
        title: 'Production',
      }),
    ],
-   output: {
-     filename: '[name].bundle.js',
-     path: path.resolve(__dirname, 'dist'),
-     clean: true,
-   },
+   
  };
