@@ -1,7 +1,7 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     resolve: {
         extensions: ['.js', '.jsx']
     },
@@ -22,7 +22,7 @@ module.exports = {
     externals: {
         // global app config object
         config: JSON.stringify({
-            apiUrl: process.env.PORT || 'http://localhost:4000'
+            apiUrl: 'http://localhost:4000'
         })
     }
 }
