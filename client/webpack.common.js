@@ -13,10 +13,14 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Production',
-    }),
-  ],
+  plugins: [new HtmlWebpackPlugin({
+    template: './src/index.html'
+  })],
+  externals: {
+    // global app config object
+    config: JSON.stringify({
+      apiUrl: 'http://localhost:4000'
+    })
+  }
 
 };
