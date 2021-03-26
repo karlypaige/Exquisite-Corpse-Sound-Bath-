@@ -31,7 +31,7 @@ app.get("*", (req, res) => {
       res.sendFile(`${__dirname}/build/${path}`);
     } else {
       // Otherwise, redirect to /build/index.html
-      res.sendFile(`${__dirname}/build/index.html`);
+      res.sendFile(`${__dirname}/client/src/index.html`);
     }
   });
   
