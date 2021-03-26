@@ -1,3 +1,4 @@
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -20,6 +21,11 @@ module.exports = {
     config: JSON.stringify({
       apiUrl: 'http://localhost:4000'
     })
-  }
+  },
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+    clean_urls: false,
+  },
 
 };
