@@ -38,8 +38,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack-prod-server --open"
+    "start": "webpack-serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
