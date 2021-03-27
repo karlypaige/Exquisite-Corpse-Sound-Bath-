@@ -15,7 +15,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 render(
     // <Provider store={store}>
-        <App />
+        <App />,
     // </Provider>,
     document.getElementById('root')
 );
