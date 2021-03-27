@@ -35,5 +35,14 @@ module.exports = {
         config: JSON.stringify({
             apiUrl: 'http://localhost:4000'
         })
+    },
+    entry: [
+        './src/index.js'
+    ],
+    output: {
+        path: __dirname,
+        publicPath: '/',
+        filename: 'bundle.js'
     }
+
 }
