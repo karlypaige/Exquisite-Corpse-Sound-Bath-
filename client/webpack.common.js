@@ -2,6 +2,20 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  entry: {
+    app: './src/index.js',
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      // title: 'Production',
+      template: './src/index.html',
+    }),
+  ],
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+    // clean: true,
+  },
   resolve: {
     extensions: ['.js', '.jsx']
   },
@@ -13,19 +27,4 @@ module.exports = {
       }
     ]
   },
-  plugins: [new HtmlWebpackPlugin({
-    template: './src/index.html'
-  })],
-  externals: {
-    // global app config object
-    config: JSON.stringify({
-      apiUrl: 'http://localhost:4000'
-    })
-  },
-  output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'src/App/index'),
-  
-  },
-
 };

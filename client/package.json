@@ -34,11 +34,11 @@
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.2",
-    "webpack-merge": "^5.7.3"
+    "webpack-merge": "^5.7.3",
+    "webpack-serve": "^3.2.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "start": "webpack-serve --open --config webpack.dev.js",
+    "start": "webpack-dev-server --open",
     "build": "webpack --config webpack.prod.js"
   },
   "repository": {
