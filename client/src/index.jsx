@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 
 import { store } from './_helpers';
-import { App } from './App';
+import { App } from './App/App';
 
 // setup fake backend
 import { configureFakeBackend } from './_helpers';
@@ -14,8 +14,8 @@ if (process.env.NODE_ENV !== 'production') {
 };
 
 render(
-    // <Provider store={store}>
-        <App />,
-    // </Provider>,
+    <Provider store={store}>
+        <App />
+    </Provider>,
     document.getElementById('root')
 );
