@@ -39,7 +39,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open",
-    "build": "webpack-server --open"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
