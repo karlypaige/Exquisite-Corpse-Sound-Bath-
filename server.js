@@ -46,9 +46,9 @@ if (process.env.NODE_ENV === "production") {
 //   res.sendFile(path.resolve(__dirname, './'));
 // });
 
-// const SoundRoute = require('./routes/soundAPI');
+const SoundRoute = require('./routes/soundAPI');
 
-// app.use(SoundRoute);
+app.use(SoundRoute);
 
 app.use(express.static(__dirname + '/dist'))
 app.listen(apiPort, () => console.log(`Server running on port ${apiPort}`))
