@@ -4,7 +4,7 @@ const WebpackPwaManifest = require("webpack-pwa-manifest");
 
 module.exports = merge(common, {
   mode: 'production',
-
+  target:'node',
   entry: './src/App/App.jsx',
   output: {
     path: __dirname + "./client/dist",
