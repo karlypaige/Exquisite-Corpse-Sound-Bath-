@@ -42,9 +42,9 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // send the user to index html page inspite of the url
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './client/src/index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.resolve(__dirname, './'));
+// });
 
 // const SoundRoute = require('./routes/soundAPI');
 
