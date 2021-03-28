@@ -4,7 +4,7 @@ const common = require('./webpack.common.js');
 module.exports = merge(common, {
   mode: 'production',
 
-  entry: './src/App/App.jsx',
+  entry: 'server.js',
   output: {
     path: __dirname + "./client/dist",
     filename: "bundle.js"
