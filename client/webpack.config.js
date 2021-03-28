@@ -15,7 +15,7 @@ const WebpackPwaManifest = require('webpack-pwa-manifest');
 module.exports = {
     entry: './client/src/App/App.jsx',
     output: {
-        path: __dirname + "/public/dist",
+        path: __dirname + "./client/dist",
         filename: "bundle.js"
     },
     mode: 'production',
