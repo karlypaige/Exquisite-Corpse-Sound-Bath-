@@ -9,6 +9,7 @@ const apiPort = 3001;
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 app.use(express.json());
+app.use(express.static(".client/dist"));
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/funkySound', {
     useNewUrlParser: true,
