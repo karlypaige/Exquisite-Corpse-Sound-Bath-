@@ -1,22 +1,24 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { merge } = require('webpack-merge');
+const common = require('./webpack.common.js');
 
-module.exports = {
+module.exports = merge(common, {
   mode: 'production',
-  // entry: {
-  //   app: './src/index.jsx',
-  // },
-  resolve: {
-    extensions: ['.js', '.jsx']
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Production',
-    }),
-  ],
+
+  entry: './src/App/App.jsx',
   output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'src/index.html'),
-    // clean: true,
+    path: __dirname + "./client/dist",
+    filename: "bundle.js"
   },
-};
+  mode: 'production',
+  plugins: [
+    new WebpackPwaManifest({
+      filename: "manifest.json",
+      inject: false,
+      fingerpringts: false.valueOf,
+      name: "Exquisite Corpse Sound Bath App",
+      short_name: "ECSB App",
+      start_url: "/",
+      display: "standalone"
+    })
+  ],
+})
