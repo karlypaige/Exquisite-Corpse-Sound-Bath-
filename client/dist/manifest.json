@@ -1,0 +1,7 @@
+{
+  "name": "Exquisite Corpse Sound Bath App",
+  "short_name": "ECSB App",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "/"
+}

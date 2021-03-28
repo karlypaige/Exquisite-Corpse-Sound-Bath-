@@ -1,14 +1,15 @@
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
 const WebpackPwaManifest = require("webpack-pwa-manifest");
+const path = require('path');
 
 module.exports = merge(common, {
   mode: 'production',
   target:'node',
   entry: './src/App/App.jsx',
   output: {
-    path: __dirname + "./client/dist",
-    filename: "bundle.js"
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, './dist'),
   },
   mode: 'production',
   plugins: [
