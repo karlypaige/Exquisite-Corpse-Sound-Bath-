@@ -3,7 +3,7 @@ var router = express.Router();
 const Sound = require('../models/sound-models')
 
 router.get('/', function(req, res, next) {
-    res.send('API is working');
+    res.send('./client/dist');
 });
 
 // Create POST /api/sound  route
