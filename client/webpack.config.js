@@ -13,9 +13,9 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 
 module.exports = {
-    entry: './client/src/App/App.jsx',
+    entry: './src/App/App.jsx',
     output: {
-        path: __dirname + "./client/dist",
+        path: __dirname + "./client/dist", 
         filename: "bundle.js"
     },
     mode: 'production',
@@ -24,7 +24,7 @@ module.exports = {
     },
     plugins: [
         new WebpackPwaManifest({
-            filename: "mainfest.json",
+            filename: "manifest.json",
             inject: false,
             fingerpringts: false.valueOf,
             name: "Exquisite Corpse Sound Bath App",
