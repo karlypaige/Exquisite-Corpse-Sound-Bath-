@@ -45,7 +45,7 @@
     "webpack": "webpack",
     "prestart": "npm run webpack",
     "start": "webpack-dev-server --open",
-    "heroku-postbuild": "webpack -p"
+    "heroku-postbuild": "webpack build"
   },
   "repository": {
     "type": "git",
