@@ -6,7 +6,7 @@ const path = require('path');
 module.exports = merge(common, {
   mode: 'production',
   target:'node',
-  entry: './src/App/App.jsx',
+  entry: './src/index.jsx',
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, './dist'),
