@@ -50,7 +50,7 @@ class HomePage extends Component {
         if (axios.isCancel(error) || error) {
           this.setState({
             loading: false,
-            message: "Failed to fecth results. Please check network",
+            message: "Failed to fetch results. Please check network",
           });
         }
       });
@@ -212,9 +212,9 @@ class HomePage extends Component {
           {/* {user.firstName + ' ' + user.lastName} */}
           {/* { */}
           {/* // user.deleting ? <em> - Deleting...</em>
-                                    // : user.deleteError ? <span className="text-danger"> - ERROR: {user.deleteError}</span>
-                                    // : <span> - <a onClick={this.handleDeleteUser(user.id)}>Delete</a></span>
-                                // } */}
+          // : user.deleteError ? <span className="text-danger"> - ERROR: {user.deleteError}</span>
+          // : <span> - <a onClick={this.handleDeleteUser(user.id)}>Delete</a></span>
+          // } */}
           {/* </li> */}
           {/* // )} */}
           {/* </ul> */}
