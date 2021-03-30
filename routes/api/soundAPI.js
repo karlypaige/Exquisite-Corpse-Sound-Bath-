@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const Sound = require('../models/sound-models')
+const Sound = require('../../models/sound-models')
 const path = require('path');
 
 router.get('/', function(req, res, next) {
