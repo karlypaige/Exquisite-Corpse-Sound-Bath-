@@ -11,6 +11,9 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static("client"));
 
+// require ('./routes/htmlRoutes')(app)
+// require ('./routes/soundAPI')(app)
+
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/funkySound', {
     useNewUrlParser: true,
     useFindAndModify: false,
@@ -19,10 +22,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/funkySound', {
     
 });
 
-require ('./routes/htmlRoutes')(app)
-require ('./routes/soundAPI')(app)
-
-
-// const SoundRoute = require('./routes/soundAPI');
-// app.use(SoundRoute);
+const SoundRoute = require('./routes');
+app.use(SoundRoute);
 app.listen(apiPort, () => console.log(`Server running on port ${apiPort}`))
