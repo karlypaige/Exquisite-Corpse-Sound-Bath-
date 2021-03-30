@@ -4,7 +4,7 @@ const Sound = require('../models/sound-models')
 const path = require('path');
 
 router.get('/', function(req, res, next) {
-    res.sendFile(path.join(__dirname, '../client/src/index.html'));
+    res.sendFile('You are in soundAPI');
 });
 
 // Create POST /api/sound  route
