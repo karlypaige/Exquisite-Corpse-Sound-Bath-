@@ -6,7 +6,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx']
   },
-
+  
   module: {
     rules: [
       {
@@ -16,7 +16,7 @@ module.exports = {
     ]
   },
 
-  entry: './src/index.jsx',
+  entry: './src/App/App.jsx',
   
   plugins: [new HtmlWebpackPlugin({
     template: './src/index.html'
