@@ -22,6 +22,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/funkySound', {
     
 });
 
-const SoundRoute = require('./routes');
+const SoundRoute = require('./routes/index.js');
 app.use(SoundRoute);
 app.listen(apiPort, () => console.log(`Server running on port ${apiPort}`))
